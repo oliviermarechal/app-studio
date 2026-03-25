@@ -116,12 +116,12 @@ export default async function AppDetailPage({ params }: Props) {
         >
           Privacy Policy
         </Link>
-        <a
-          href={`mailto:${app.supportEmail}`}
+        <Link
+          href={`/support?app=${app.slug}`}
           className="hover:text-foreground transition-colors"
         >
           Support
-        </a>
+        </Link>
       </div>
     </div>
   );
