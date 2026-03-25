@@ -4,10 +4,10 @@ export function Footer() {
       <div className="mx-auto max-w-4xl px-6 py-6 flex items-center justify-between text-sm text-muted">
         <span>&copy; {new Date().getFullYear()} OM Studio</span>
         <a
-          href="mailto:contact@getevox.fit"
+          href="/support"
           className="hover:text-foreground transition-colors"
         >
-          contact@getevox.fit
+          Contact & Support
         </a>
       </div>
     </footer>
