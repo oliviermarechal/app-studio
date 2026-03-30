@@ -95,13 +95,91 @@ export const apps: App[] = [
   {
     slug: "novatech-ai-tycoon",
     name: "NovaTech: AI Tycoon",
-    tagline: "Build your AI empire, one tap at a time.",
+    tagline: "Build your AI empire from a garage to a quantum lab.",
     description:
-      "An idle tycoon game where you build an AI empire. Manage 9 AI businesses, hire managers, train models across quality tiers, prestige with neural resets, complete daily quests, and climb the ranks. Cyberpunk-themed UI with offline earnings.",
+      "NovaTech is an idle tycoon game where you build an AI empire from scratch. Start with a simple chatbot, scale to 9 AI businesses, hire AI managers to automate production, hit milestones for permanent multipliers, and release AI versions to earn synapses. Features a Quantum Lab with experiments, daily quests, login streaks, achievements, patents, timed events, and challenges. Cyberpunk-themed control room UI with offline earnings.",
     supportEmail: "contact@getevox.fit",
     icon: "/icons/novatech.png",
-    stack: ["React Native", "Expo", "TypeScript"],
-    status: "coming-soon",
+    stack: ["React Native", "Expo", "TypeScript", "i18next"],
+    status: "live",
+    privacySections: [
+      {
+        title: "1. Data Collection",
+        content:
+          "NovaTech: AI Tycoon does not collect, store, or share any personal data. All game progress (generators, upgrades, prestige data, achievements, quests) is stored locally on your device using AsyncStorage and is never transmitted to any external server.",
+      },
+      {
+        title: "2. Third-Party Services",
+        content:
+          "NovaTech uses the following third-party services:",
+        items: [
+          {
+            label: "Google AdMob",
+            description:
+              "Displays rewarded video ads (optional, to earn in-game bonuses). AdMob may collect device identifiers for ad delivery. We request non-personalized ads by default. You can play the entire game without watching any ads.",
+            url: "https://policies.google.com/privacy",
+          },
+          {
+            label: "RevenueCat",
+            description:
+              "Manages optional in-app purchases (Starter Pack, VIP Pass, Synapse Pack, Quantum Pack). RevenueCat processes purchase transactions and entitlement status. No personal data beyond purchase receipts is shared.",
+            url: "https://www.revenuecat.com/privacy",
+          },
+          {
+            label: "Expo Insights",
+            description:
+              "Collects anonymous usage analytics (session count, app version) to help improve the game. No personally identifiable information is collected.",
+            url: "https://expo.dev/privacy",
+          },
+          {
+            label: "Expo Updates",
+            description:
+              "Delivers over-the-air updates to fix bugs and improve the game without requiring a full app store update. No personal data is collected.",
+            url: "https://expo.dev/privacy",
+          },
+        ],
+      },
+      {
+        title: "3. Data Storage",
+        content:
+          "All game data is stored locally on your device using AsyncStorage. There is no cloud sync, no account system, no login required, and no remote database. Your game progress stays on your device. Uninstalling the app will delete all saved data.",
+      },
+      {
+        title: "4. Analytics & Tracking",
+        content:
+          "NovaTech uses Expo Insights for anonymous, aggregated analytics only (e.g., number of active users, app version distribution). We do not track individual user behavior, gameplay patterns, or personal information. AdMob may use device identifiers for ad targeting as described in Google's privacy policy.",
+      },
+      {
+        title: "5. In-App Purchases",
+        content:
+          "NovaTech offers optional in-app purchases. All transactions are processed by Apple (App Store) or Google (Play Store) through RevenueCat. We do not have access to your payment information. The game is fully playable without any purchases.",
+      },
+      {
+        title: "6. Push Notifications",
+        content:
+          "NovaTech may send local push notifications to remind you about offline earnings, available challenges, or login streak rewards. These notifications are scheduled locally on your device and do not involve any external server. You can disable them at any time in your device settings.",
+      },
+      {
+        title: "7. Children's Privacy",
+        content:
+          "NovaTech does not knowingly collect any personal information from children under 13. Since no personal data is collected from any user, the app is safe for all ages. The game is rated 4+ and contains no objectionable content.",
+      },
+      {
+        title: "8. Your Rights",
+        content:
+          "Since we do not collect or store any personal data on our servers, there is no personal data to access, modify, or delete. All game data is stored locally on your device and can be deleted by uninstalling the app.",
+      },
+      {
+        title: "9. Changes to This Policy",
+        content:
+          "We may update this privacy policy from time to time. Any changes will be reflected on this page with an updated effective date. Continued use of the app after changes constitutes acceptance of the updated policy.",
+      },
+      {
+        title: "10. Contact",
+        content:
+          "If you have any questions about this privacy policy, please contact us at contact@getevox.fit.",
+      },
+    ],
   },
 ];
 
