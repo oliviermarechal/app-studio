@@ -181,6 +181,78 @@ export const apps: App[] = [
       },
     ],
   },
+  {
+    slug: "spin-it",
+    name: "SpinIt",
+    tagline: "Spin the Wheel — Random Picker.",
+    description:
+      "SpinIt is a fun and polished wheel spinner app. Create custom wheels, spin to pick a random option, and let chance decide. Perfect for games, decisions, giveaways, or just for fun. Save your wheels, customize colors, and enjoy smooth animations. No account needed — everything stays on your device.",
+    supportEmail: "contact@getevox.fit",
+    icon: "/icons/spinit.png",
+    stack: ["React Native", "Expo", "TypeScript", "Skia", "Reanimated"],
+    status: "coming-soon",
+    privacySections: [
+      {
+        title: "1. Data Collection",
+        content:
+          "SpinIt does not collect, store, or share any personal data. All your wheels, settings, and preferences are stored locally on your device using AsyncStorage and are never transmitted to any external server.",
+      },
+      {
+        title: "2. Third-Party Services",
+        content:
+          "SpinIt uses the following third-party services:",
+        items: [
+          {
+            label: "Google AdMob (free version only)",
+            description:
+              "Displays ads to support the free version of the app. AdMob may collect device identifiers for ad delivery. We request non-personalized ads only. You can remove all ads with a one-time purchase.",
+            url: "https://policies.google.com/privacy",
+          },
+          {
+            label: "RevenueCat",
+            description:
+              "Manages the optional one-time in-app purchase to remove ads. RevenueCat processes purchase transactions and entitlement status. No personal data beyond purchase receipts is shared.",
+            url: "https://www.revenuecat.com/privacy",
+          },
+        ],
+      },
+      {
+        title: "3. Data Storage",
+        content:
+          "All app data (custom wheels, settings, preferences) is stored locally on your device using AsyncStorage. There is no cloud sync, no account system, no login required, and no remote database. Uninstalling the app will delete all saved data.",
+      },
+      {
+        title: "4. Analytics & Tracking",
+        content:
+          "SpinIt does not use any analytics, crash reporting, or tracking tools. The app does not track your behavior or usage patterns. AdMob may use device identifiers for ad targeting as described in Google's privacy policy.",
+      },
+      {
+        title: "5. In-App Purchases",
+        content:
+          "SpinIt offers an optional one-time purchase to remove all ads. The transaction is processed by Apple (App Store) or Google (Play Store) through RevenueCat. We do not have access to your payment information. The app is fully functional without any purchase.",
+      },
+      {
+        title: "6. Children's Privacy",
+        content:
+          "SpinIt does not knowingly collect any personal information from children under 13. Since no personal data is collected from any user, the app is safe for all ages.",
+      },
+      {
+        title: "7. Your Rights",
+        content:
+          "Since we do not collect or store any personal data on our servers, there is no personal data to access, modify, or delete. All app data is stored locally on your device and can be deleted by uninstalling the app.",
+      },
+      {
+        title: "8. Changes to This Policy",
+        content:
+          "We may update this privacy policy from time to time. Any changes will be reflected on this page with an updated effective date. Continued use of the app after changes constitutes acceptance of the updated policy.",
+      },
+      {
+        title: "9. Contact",
+        content:
+          "If you have any questions about this privacy policy, please contact us at contact@getevox.fit.",
+      },
+    ],
+  },
 ];
 
 export function getAppBySlug(slug: string): App | undefined {
