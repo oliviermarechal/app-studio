@@ -147,35 +147,40 @@ export const apps: App[] = [
       {
         title: "4. Analytics & Tracking",
         content:
-          "NovaTech uses Expo Insights for anonymous, aggregated analytics only (e.g., number of active users, app version distribution). We do not track individual user behavior, gameplay patterns, or personal information. AdMob may use device identifiers for ad targeting as described in Google's privacy policy.",
+          "NovaTech uses Expo Insights for anonymous, aggregated analytics only (e.g., number of active users, app version distribution). We do not track individual user behavior, gameplay patterns, or personal information.",
       },
       {
-        title: "5. In-App Purchases",
+        title: "5. Advertising & App Tracking Transparency",
+        content:
+          "On iOS 14.5+, NovaTech requests your permission via Apple's App Tracking Transparency (ATT) framework before allowing AdMob to use your device identifier (IDFA) for personalized advertising. If you decline, only non-personalized ads are shown. Your choice does not affect gameplay. The IDFA is used solely by Google AdMob for ad delivery and is not stored or processed by us. You can change your tracking preference at any time in your device Settings > Privacy & Security > Tracking.",
+      },
+      {
+        title: "6. In-App Purchases",
         content:
           "NovaTech offers optional in-app purchases. All transactions are processed by Apple (App Store) or Google (Play Store) through RevenueCat. We do not have access to your payment information. The game is fully playable without any purchases.",
       },
       {
-        title: "6. Push Notifications",
+        title: "7. Push Notifications",
         content:
           "NovaTech may send local push notifications to remind you about offline earnings, available challenges, or login streak rewards. These notifications are scheduled locally on your device and do not involve any external server. You can disable them at any time in your device settings.",
       },
       {
-        title: "7. Children's Privacy",
+        title: "8. Children's Privacy",
         content:
           "NovaTech does not knowingly collect any personal information from children under 13. Since no personal data is collected from any user, the app is safe for all ages. The game is rated 4+ and contains no objectionable content.",
       },
       {
-        title: "8. Your Rights",
+        title: "9. Your Rights",
         content:
           "Since we do not collect or store any personal data on our servers, there is no personal data to access, modify, or delete. All game data is stored locally on your device and can be deleted by uninstalling the app.",
       },
       {
-        title: "9. Changes to This Policy",
+        title: "10. Changes to This Policy",
         content:
           "We may update this privacy policy from time to time. Any changes will be reflected on this page with an updated effective date. Continued use of the app after changes constitutes acceptance of the updated policy.",
       },
       {
-        title: "10. Contact",
+        title: "11. Contact",
         content:
           "If you have any questions about this privacy policy, please contact us at contact@getevox.fit.",
       },
