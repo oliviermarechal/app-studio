@@ -116,7 +116,7 @@ export const apps: App[] = [
           {
             label: "Google AdMob",
             description:
-              "Displays rewarded video ads (optional, to earn in-game bonuses). AdMob may collect device identifiers for ad delivery. We request non-personalized ads by default. You can play the entire game without watching any ads.",
+              "Displays rewarded video ads (optional, to earn in-game bonuses). AdMob may collect device identifiers (IDFA) for ad delivery and personalization, subject to your App Tracking Transparency (ATT) consent on iOS. If you decline tracking, only non-personalized ads are shown. You can play the entire game without watching any ads.",
             url: "https://policies.google.com/privacy",
           },
           {
@@ -187,10 +187,11 @@ export const apps: App[] = [
     tagline: "Spin the Wheel — Random Picker.",
     description:
       "SpinIt is a fun and polished wheel spinner app. Create custom wheels, spin to pick a random option, and let chance decide. Perfect for games, decisions, giveaways, or just for fun. Save your wheels, customize colors, and enjoy smooth animations. No account needed — everything stays on your device.",
+    playStoreUrl: "https://play.google.com/store/apps/details?id=com.loxx.spinit",
     supportEmail: "contact@getevox.fit",
     icon: "/icons/spinit.png",
     stack: ["React Native", "Expo", "TypeScript", "Skia", "Reanimated"],
-    status: "coming-soon",
+    status: "live",
     privacySections: [
       {
         title: "1. Data Collection",
